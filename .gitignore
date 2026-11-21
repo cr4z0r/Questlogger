@@ -1,0 +1,36 @@
+# Local editor and operating system files.
+.idea/
+.vscode/
+.DS_Store
+Thumbs.db
+Desktop.ini
+*.swp
+*.swo
+*~
+*.bak
+*.tmp
+
+# Local credentials and environment files.
+.env
+.env.*
+!.env.example
+*.pem
+*.key
+*.p12
+*.pfx
+id_rsa
+id_ed25519
+
+# Game state and personal captures copied into the project by mistake.
+/WTF/
+/WDB/
+/Cache/
+/Logs/
+/Screenshots/
+/SavedVariables/
+/Questlogger.lua
+
+# Local distribution archives.
+*.zip
+*.7z
+*.rar

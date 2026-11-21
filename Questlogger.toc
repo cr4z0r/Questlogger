@@ -1,0 +1,65 @@
+## Interface: 120105, 11509, 20506, 38002, 50504, 16001
+## Title: Questlogger
+## Notes: Quest log and tracker enhancements for World of Warcraft.
+## Notes-deDE: Verbesserungen für das Questlog und die Questverfolgung in World of Warcraft.
+## Notes-frFR: Améliorations du journal et du suivi des quêtes de World of Warcraft.
+## Notes-esES: Mejoras del registro y del seguimiento de misiones de World of Warcraft.
+## Notes-esMX: Mejoras del registro y del seguimiento de misiones de World of Warcraft.
+## Notes-itIT: Miglioramenti al registro e al tracciamento delle missioni di World of Warcraft.
+## Notes-ptBR: Melhorias no registro e no rastreamento de missões de World of Warcraft.
+## Notes-ruRU: Улучшения журнала и отслеживания заданий World of Warcraft.
+## Notes-koKR: 월드 오브 워크래프트 퀘스트 목록 및 추적 기능 개선.
+## Notes-zhCN: 增强魔兽世界任务日志与任务追踪功能。
+## Notes-zhTW: 增強魔獸世界任務日誌與任務追蹤功能。
+## Author: cr4z0r
+## Version: 0.1.0
+## OptionalDeps: QuestieDB, Questie
+## Category: Quests
+## Category-deDE: Quests
+## Category-frFR: Quêtes
+## Category-esES: Misiones
+## Category-esMX: Misiones
+## Category-itIT: Missioni
+## Category-ptBR: Missões
+## Category-ruRU: Задания
+## Category-koKR: 퀘스트
+## Category-zhCN: 任务
+## Category-zhTW: 任務
+## IconTexture: Interface\AddOns\Questlogger\Assets\QuestloggerDungeon.tga
+## X-License: MIT
+
+# Load client translations before modules cache their display labels.
+Core\Locale.lua
+Locales\deDE.lua
+Locales\frFR.lua
+Locales\esES.lua
+Locales\esMX.lua
+Locales\itIT.lua
+Locales\ptBR.lua
+Locales\ruRU.lua
+Locales\koKR.lua
+Locales\zhCN.lua
+Locales\zhTW.lua
+# Quest graph and data access.
+Core\Compat.lua
+Core\Chains.lua
+Data\Api.lua
+Data\Locations.lua
+Data\Rewards.lua
+Data\Targets.lua
+Data\Experience.lua
+# Shared UI, quest cards, and tracker controllers.
+UI\RewardIcons.lua
+UI\TooltipStyle.lua
+UI\QuestRows.lua
+UI\EntityPreview.lua
+UI\QuestText.lua
+UI\QuestCard.lua
+UI\MapQuestCards.lua
+UI\BulkControls.lua
+UI\TrackerGeometry.lua
+UI\Trackers.lua
+UI\ClientQuestLog.lua
+UI\ExperienceBar.lua
+# Register live events only after all modules are ready.
+Core\Main.lua
